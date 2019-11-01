@@ -12,11 +12,11 @@ export class AppComponent implements AfterViewInit {
   ngAfterViewInit() {
 
     this.editor.getEditor().setOptions({
-      showLineNumbers: true,
+      showLineNumbers: false,
       tabSize: 2
     });
 
-    this.editor.mode = 'javascript';
+    this.editor.mode = 'python';
     this.editor.value = `function testThis() {
   console.log("Sup, ACLC!")
 }`
